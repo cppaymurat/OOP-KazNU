@@ -59,32 +59,32 @@ namespace ConsoleApp6
     {
         public word length;
         public string str;
-        // êîíñòðóêòîð áåç ïàðàìåòðîâ
+        // конструктор без параметров
         public STRING()
         {
         }
 
-        // êîíñòðóêòîð, ïðèíèìàþùèé â êà÷åñòâå ïàðàìåòðà ñòðîêîâûé ëèòåðàë
+        // конструктор, принимающий в качестве параметра строковый литерал
         public STRING(string str)
         {
             this.str = str;
             length = new word(str.Length);
         }
 
-        // êîíñòðóêòîð, ïðèíèìàþùèé â êà÷åñòâå ïàðàìåòðà ñèìâîë;
+        // конструктор, принимающий в качестве параметра символ;
         public STRING(char ch)
         {
             str = Convert.ToString(ch);
             length = new word(1);
         }
 
-        // Ìåòîä âîçâðàùàþùèé äëèííó ñòðîêè.
+        // Метод возвращающий длинну строки.
         public int getLength()
         {
             return length.getVal();
         }
 
-        // Ìåòîä î÷èùàþùèé ñòðîêó.
+        // Метод очищающий строку.
         public void Clear()
         {
             str = "";
@@ -138,7 +138,7 @@ namespace ConsoleApp6
         {
             if (VerifyString(s_) == 0)
             {
-                Console.WriteLine("Ââåäåííàÿ ñòðîêà íåêîððåêòíà!");
+                Console.WriteLine("Введенная строка некорректна!");
                 str = "";
                 length = new word(0);
             }
@@ -261,32 +261,32 @@ namespace ConsoleApp6
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Ââåäèòå áèòîâóþ ñòðîêó a: ");
+            Console.WriteLine("Введите битовую строку a: ");
             string s = Console.ReadLine();
             BITSTRING a = new BITSTRING(s);
-            Console.WriteLine("Ââåäèòå áèòîâóþ ñòðîêó b: ");
+            Console.WriteLine("Введите битовую строку b: ");
             s = Console.ReadLine();
             BITSTRING b = new BITSTRING(s);
-            Console.WriteLine("Ïðÿìûé êîä äëÿ a: ");
+            Console.WriteLine("Прямый код для a: ");
             Console.WriteLine(a.str);
-            Console.WriteLine("Ïðÿìîé êîä äëÿ b: ");
+            Console.WriteLine("Прямой код для b: ");
             Console.WriteLine(b.str);
-            Console.WriteLine("Äîïîëíèòåëüíûé êîä äëÿ a: ");
+            Console.WriteLine("Дополнительный код для a: ");
             a.changeSign(a);
             Console.WriteLine(a.str);
-            Console.WriteLine("Äîïîëíèòåëüíûé êîä äëÿ b: ");
+            Console.WriteLine("Дополнительный код для b: ");
             b.changeSign(b);
             Console.WriteLine(b.str);
-            Console.Write("a ðàâíî b? ");
+            Console.Write("a равно b? ");
             if (a == b)
             {
-                Console.Write("Äà");
+                Console.Write("Да");
             }
             else
             {
-                Console.Write("Íåò");
+             Console.Write("Нет");
             }
-            Console.WriteLine("\nÀðèôìåòè÷åñêàÿ ñóììà ñòðîê = ");
+            Console.WriteLine("\nАрифметическая сумма строк = ");
             BITSTRING c = a + b;
             Console.WriteLine(c.str);
             Console.ReadKey();
