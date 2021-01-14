@@ -73,7 +73,7 @@ namespace ConsoleApp6
             }
             catch
             {
-                Console.Write("Исключение! Размеры матриц не совпадают!\n");
+                Console.Write("РСЃРєР»СЋС‡РµРЅРёРµ! Р Р°Р·РјРµСЂС‹ РјР°С‚СЂРёС† РЅРµ СЃРѕРІРїР°РґР°СЋС‚!\n");
             }
             return c;
         }
@@ -94,7 +94,7 @@ namespace ConsoleApp6
             }
             catch
             {
-                Console.Write("Исключение! Размеры матриц не совпадают!\n");
+                Console.Write("РСЃРєР»СЋС‡РµРЅРёРµ! Р Р°Р·РјРµСЂС‹ РјР°С‚СЂРёС† РЅРµ СЃРѕРІРїР°РґР°СЋС‚!\n");
             }
             return c;
         }
@@ -119,7 +119,7 @@ namespace ConsoleApp6
             }
             catch
             {
-                Console.Write("Исключение! Размеры матриц не позволяют выполнить умножение!\n");
+                Console.Write("РСЃРєР»СЋС‡РµРЅРёРµ! Р Р°Р·РјРµСЂС‹ РјР°С‚СЂРёС† РЅРµ РїРѕР·РІРѕР»СЏСЋС‚ РІС‹РїРѕР»РЅРёС‚СЊ СѓРјРЅРѕР¶РµРЅРёРµ!\n");
             }
             return ans;
         }
@@ -272,7 +272,7 @@ namespace ConsoleApp6
             }
             catch
             {
-                Console.Write("Исключение! Размеры матриц не позволяют выполнить деление!\n");
+                Console.Write("РСЃРєР»СЋС‡РµРЅРёРµ! Р Р°Р·РјРµСЂС‹ РјР°С‚СЂРёС† РЅРµ РїРѕР·РІРѕР»СЏСЋС‚ РІС‹РїРѕР»РЅРёС‚СЊ РґРµР»РµРЅРёРµ!\n");
             }
             return ans;
         }
@@ -312,40 +312,40 @@ namespace ConsoleApp6
     {
         public static void menu()
         {
-            Console.WriteLine("Выберите операцию с матрицами: ");
-            Console.WriteLine("1. Выполнить операцию A * B");
-            Console.WriteLine("2. Выполнить операцию A + C");
-            Console.WriteLine("3. Выполнить операцию A - C");
-            Console.WriteLine("4. Выполнить операцию A / B");
-            Console.WriteLine("5. Сгенерировать новую матрицу A");
-            Console.WriteLine("6. Сгенерировать новую матрица B");
-            Console.WriteLine("7. Вывести матрицу A");
-            Console.WriteLine("8. Вывести матрицу B");
-            Console.WriteLine("9. Найти обратную матрицу A");
-            Console.WriteLine("10. Найти обратную матрицу B");
-            Console.WriteLine("11. Найти ранг матрицы A");
-            Console.WriteLine("12. Найти ранг матрицы B");
-            Console.WriteLine("13. Выйти из программы");
+            Console.WriteLine("Р’С‹Р±РµСЂРёС‚Рµ РѕРїРµСЂР°С†РёСЋ СЃ РјР°С‚СЂРёС†Р°РјРё: ");
+            Console.WriteLine("1. Р’С‹РїРѕР»РЅРёС‚СЊ РѕРїРµСЂР°С†РёСЋ A * B");
+            Console.WriteLine("2. Р’С‹РїРѕР»РЅРёС‚СЊ РѕРїРµСЂР°С†РёСЋ A + C");
+            Console.WriteLine("3. Р’С‹РїРѕР»РЅРёС‚СЊ РѕРїРµСЂР°С†РёСЋ A - C");
+            Console.WriteLine("4. Р’С‹РїРѕР»РЅРёС‚СЊ РѕРїРµСЂР°С†РёСЋ A / B");
+            Console.WriteLine("5. РЎРіРµРЅРµСЂРёСЂРѕРІР°С‚СЊ РЅРѕРІСѓСЋ РјР°С‚СЂРёС†Сѓ A");
+            Console.WriteLine("6. РЎРіРµРЅРµСЂРёСЂРѕРІР°С‚СЊ РЅРѕРІСѓСЋ РјР°С‚СЂРёС†Р° B");
+            Console.WriteLine("7. Р’С‹РІРµСЃС‚Рё РјР°С‚СЂРёС†Сѓ A");
+            Console.WriteLine("8. Р’С‹РІРµСЃС‚Рё РјР°С‚СЂРёС†Сѓ B");
+            Console.WriteLine("9. РќР°Р№С‚Рё РѕР±СЂР°С‚РЅСѓСЋ РјР°С‚СЂРёС†Сѓ A");
+            Console.WriteLine("10. РќР°Р№С‚Рё РѕР±СЂР°С‚РЅСѓСЋ РјР°С‚СЂРёС†Сѓ B");
+            Console.WriteLine("11. РќР°Р№С‚Рё СЂР°РЅРі РјР°С‚СЂРёС†С‹ A");
+            Console.WriteLine("12. РќР°Р№С‚Рё СЂР°РЅРі РјР°С‚СЂРёС†С‹ B");
+            Console.WriteLine("13. Р’С‹Р№С‚Рё РёР· РїСЂРѕРіСЂР°РјРјС‹");
         }
         static void Main(string[] args)
         {
             Random rand = new Random();
             int A_rows, A_cols, B_rows, B_cols;
-            Console.Write("Введите количество строк матрицы А: ");
+            Console.Write("Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚СЂРѕРє РјР°С‚СЂРёС†С‹ Рђ: ");
             A_rows = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Введите количество столбцов матрицы A: ");
+            Console.Write("Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚РѕР»Р±С†РѕРІ РјР°С‚СЂРёС†С‹ A: ");
             A_cols = Convert.ToInt32(Console.ReadLine());
             Matrix A = new Matrix(A_rows, A_cols);
             A.Init(rand);
-            Console.WriteLine("Матрица А: ");
+            Console.WriteLine("РњР°С‚СЂРёС†Р° Рђ: ");
             A.Display();
-            Console.Write("Введите количество строк матрицы B: ");
+            Console.Write("Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚СЂРѕРє РјР°С‚СЂРёС†С‹ B: ");
             B_rows = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Введите количество столбцов матрицы B: ");
+            Console.Write("Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚РѕР»Р±С†РѕРІ РјР°С‚СЂРёС†С‹ B: ");
             B_cols = Convert.ToInt32(Console.ReadLine());
             Matrix B = new Matrix(B_rows, B_cols);
             B.Init(rand);
-            Console.WriteLine("Матрица В: ");
+            Console.WriteLine("РњР°С‚СЂРёС†Р° Р’: ");
             A.Display();
             Matrix C;
             int sw;
@@ -359,7 +359,7 @@ namespace ConsoleApp6
                         {
                             if (A.getCols() != B.getRows())
                             {
-                                Console.WriteLine("Операция недоступна: размеры матриц не позволяют выполнить умножение!");
+                                Console.WriteLine("РћРїРµСЂР°С†РёСЏ РЅРµРґРѕСЃС‚СѓРїРЅР°: СЂР°Р·РјРµСЂС‹ РјР°С‚СЂРёС† РЅРµ РїРѕР·РІРѕР»СЏСЋС‚ РІС‹РїРѕР»РЅРёС‚СЊ СѓРјРЅРѕР¶РµРЅРёРµ!");
                             }
                             else
                             {
@@ -373,7 +373,7 @@ namespace ConsoleApp6
                         {
                             if (A.getCols() != B.getRows())
                             {
-                                Console.WriteLine("Операция недоступна: размеры матриц не позволяют выполнить сложение!");
+                                Console.WriteLine("РћРїРµСЂР°С†РёСЏ РЅРµРґРѕСЃС‚СѓРїРЅР°: СЂР°Р·РјРµСЂС‹ РјР°С‚СЂРёС† РЅРµ РїРѕР·РІРѕР»СЏСЋС‚ РІС‹РїРѕР»РЅРёС‚СЊ СЃР»РѕР¶РµРЅРёРµ!");
                             }
                             else
                             {
@@ -387,7 +387,7 @@ namespace ConsoleApp6
                         {
                             if (A.getCols() != B.getRows())
                             {
-                                Console.WriteLine("Операция недоступна: размеры матриц не позволяют выполнить вычитание!");
+                                Console.WriteLine("РћРїРµСЂР°С†РёСЏ РЅРµРґРѕСЃС‚СѓРїРЅР°: СЂР°Р·РјРµСЂС‹ РјР°С‚СЂРёС† РЅРµ РїРѕР·РІРѕР»СЏСЋС‚ РІС‹РїРѕР»РЅРёС‚СЊ РІС‹С‡РёС‚Р°РЅРёРµ!");
                             }
                             else
                             {
@@ -401,7 +401,7 @@ namespace ConsoleApp6
                         {
                             if (A.getCols() != B.getRows())
                             {
-                                Console.WriteLine("Операция недоступна: размеры матриц не позволяют выполнить деление!");
+                                Console.WriteLine("РћРїРµСЂР°С†РёСЏ РЅРµРґРѕСЃС‚СѓРїРЅР°: СЂР°Р·РјРµСЂС‹ РјР°С‚СЂРёС† РЅРµ РїРѕР·РІРѕР»СЏСЋС‚ РІС‹РїРѕР»РЅРёС‚СЊ РґРµР»РµРЅРёРµ!");
                             }
                             else
                             {
@@ -414,30 +414,30 @@ namespace ConsoleApp6
                     case 5:
                         {
                             A.Init(rand);
-                            Console.WriteLine("Сгенерирована новая матрица А!");
+                            Console.WriteLine("РЎРіРµРЅРµСЂРёСЂРѕРІР°РЅР° РЅРѕРІР°СЏ РјР°С‚СЂРёС†Р° Рђ!");
                             break;
                         }
                     case 6:
                         {
                             B.Init(rand);
-                            Console.WriteLine("Сгенерирована новая матрица B!");
+                            Console.WriteLine("РЎРіРµРЅРµСЂРёСЂРѕРІР°РЅР° РЅРѕРІР°СЏ РјР°С‚СЂРёС†Р° B!");
                             break;
                         }
                     case 7:
                         {
-                            Console.WriteLine("Матрица A: ");
+                            Console.WriteLine("РњР°С‚СЂРёС†Р° A: ");
                             A.Display();
                             break;
                         }
                     case 8:
                         {
-                            Console.WriteLine("Матрица B: ");
+                            Console.WriteLine("РњР°С‚СЂРёС†Р° B: ");
                             B.Display();
                             break;
                         }
                     case 9:
                         {
-                            Console.WriteLine("Обратная матрица от А: ");
+                            Console.WriteLine("РћР±СЂР°С‚РЅР°СЏ РјР°С‚СЂРёС†Р° РѕС‚ Рђ: ");
                             Matrix inverse = new Matrix(A.getRows(), A.getCols());
                             inverse.Copy(A);
                             inverse.getInverse();
@@ -446,7 +446,7 @@ namespace ConsoleApp6
                         }
                     case 10:
                         {
-                            Console.WriteLine("Обратная матрица от B: ");
+                            Console.WriteLine("РћР±СЂР°С‚РЅР°СЏ РјР°С‚СЂРёС†Р° РѕС‚ B: ");
                             Matrix inverse = new Matrix(B.getRows(), B.getCols());
                             inverse.Copy(B);
                             inverse.getInverse();
@@ -455,12 +455,12 @@ namespace ConsoleApp6
                         }
                     case 11:
                         {
-                            Console.WriteLine("Ранг матрицы A: {0} ", A.getRank());
+                            Console.WriteLine("Р Р°РЅРі РјР°С‚СЂРёС†С‹ A: {0} ", A.getRank());
                             break;
                         }
                     case 12:
                         {
-                            Console.WriteLine("Ранг матрицы B: {0} ", B.getRank());
+                            Console.WriteLine("Р Р°РЅРі РјР°С‚СЂРёС†С‹ B: {0} ", B.getRank());
                             break;
                         }
                 }
