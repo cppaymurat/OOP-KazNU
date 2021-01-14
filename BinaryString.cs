@@ -3,12 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading.Tasks; 
 namespace ConsoleApp6
 {
     struct word : IComparable<word>
     {
         public int value;
+        public int forfun;
         public word(int d)
         {
             this.value = (int)d;
@@ -58,32 +59,32 @@ namespace ConsoleApp6
     {
         public word length;
         public string str;
-        // конструктор без параметров
+        // ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г° ГЎГҐГ§ ГЇГ Г°Г Г¬ГҐГІГ°Г®Гў
         public STRING()
         {
         }
 
-        // конструктор, принимающий в качестве параметра строковый литерал
+        // ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г°, ГЇГ°ГЁГ­ГЁГ¬Г ГѕГ№ГЁГ© Гў ГЄГ Г·ГҐГ±ГІГўГҐ ГЇГ Г°Г Г¬ГҐГІГ°Г  Г±ГІГ°Г®ГЄГ®ГўГ»Г© Г«ГЁГІГҐГ°Г Г«
         public STRING(string str)
         {
             this.str = str;
             length = new word(str.Length);
         }
 
-        // конструктор, принимающий в качестве параметра символ;
+        // ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г°, ГЇГ°ГЁГ­ГЁГ¬Г ГѕГ№ГЁГ© Гў ГЄГ Г·ГҐГ±ГІГўГҐ ГЇГ Г°Г Г¬ГҐГІГ°Г  Г±ГЁГ¬ГўГ®Г«;
         public STRING(char ch)
         {
             str = Convert.ToString(ch);
             length = new word(1);
         }
 
-        // Метод возвращающий длинну строки.
+        // ГЊГҐГІГ®Г¤ ГўГ®Г§ГўГ°Г Г№Г ГѕГ№ГЁГ© Г¤Г«ГЁГ­Г­Гі Г±ГІГ°Г®ГЄГЁ.
         public int getLength()
         {
             return length.getVal();
         }
 
-        // Метод очищающий строку.
+        // ГЊГҐГІГ®Г¤ Г®Г·ГЁГ№Г ГѕГ№ГЁГ© Г±ГІГ°Г®ГЄГі.
         public void Clear()
         {
             str = "";
@@ -137,7 +138,7 @@ namespace ConsoleApp6
         {
             if (VerifyString(s_) == 0)
             {
-                Console.WriteLine("Введенная строка некорректна!");
+                Console.WriteLine("Г‚ГўГҐГ¤ГҐГ­Г­Г Гї Г±ГІГ°Г®ГЄГ  Г­ГҐГЄГ®Г°Г°ГҐГЄГІГ­Г !");
                 str = "";
                 length = new word(0);
             }
@@ -260,32 +261,32 @@ namespace ConsoleApp6
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите битовую строку a: ");
+            Console.WriteLine("Г‚ГўГҐГ¤ГЁГІГҐ ГЎГЁГІГ®ГўГіГѕ Г±ГІГ°Г®ГЄГі a: ");
             string s = Console.ReadLine();
             BITSTRING a = new BITSTRING(s);
-            Console.WriteLine("Введите битовую строку b: ");
+            Console.WriteLine("Г‚ГўГҐГ¤ГЁГІГҐ ГЎГЁГІГ®ГўГіГѕ Г±ГІГ°Г®ГЄГі b: ");
             s = Console.ReadLine();
             BITSTRING b = new BITSTRING(s);
-            Console.WriteLine("Прямый код для a: ");
+            Console.WriteLine("ГЏГ°ГїГ¬Г»Г© ГЄГ®Г¤ Г¤Г«Гї a: ");
             Console.WriteLine(a.str);
-            Console.WriteLine("Прямой код для b: ");
+            Console.WriteLine("ГЏГ°ГїГ¬Г®Г© ГЄГ®Г¤ Г¤Г«Гї b: ");
             Console.WriteLine(b.str);
-            Console.WriteLine("Дополнительный код для a: ");
+            Console.WriteLine("Г„Г®ГЇГ®Г«Г­ГЁГІГҐГ«ГјГ­Г»Г© ГЄГ®Г¤ Г¤Г«Гї a: ");
             a.changeSign(a);
             Console.WriteLine(a.str);
-            Console.WriteLine("Дополнительный код для b: ");
+            Console.WriteLine("Г„Г®ГЇГ®Г«Г­ГЁГІГҐГ«ГјГ­Г»Г© ГЄГ®Г¤ Г¤Г«Гї b: ");
             b.changeSign(b);
             Console.WriteLine(b.str);
-            Console.Write("a равно b? ");
+            Console.Write("a Г°Г ГўГ­Г® b? ");
             if (a == b)
             {
-                Console.Write("Да");
+                Console.Write("Г„Г ");
             }
             else
             {
-                Console.Write("Нет");
+                Console.Write("ГЌГҐГІ");
             }
-            Console.WriteLine("\nАрифметическая сумма строк = ");
+            Console.WriteLine("\nГЂГ°ГЁГґГ¬ГҐГІГЁГ·ГҐГ±ГЄГ Гї Г±ГіГ¬Г¬Г  Г±ГІГ°Г®ГЄ = ");
             BITSTRING c = a + b;
             Console.WriteLine(c.str);
             Console.ReadKey();
