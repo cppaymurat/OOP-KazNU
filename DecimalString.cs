@@ -58,32 +58,32 @@ namespace ConsoleApp6
     {
         public word length;
         public string str;
-        // конструктор без параметров
+        // ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г° ГЎГҐГ§ ГЇГ Г°Г Г¬ГҐГІГ°Г®Гў
         public STRING()
         {
         }
 
-        // конструктор, принимающий в качестве параметра строковый литерал
+        // ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г°, ГЇГ°ГЁГ­ГЁГ¬Г ГѕГ№ГЁГ© Гў ГЄГ Г·ГҐГ±ГІГўГҐ ГЇГ Г°Г Г¬ГҐГІГ°Г  Г±ГІГ°Г®ГЄГ®ГўГ»Г© Г«ГЁГІГҐГ°Г Г«
         public STRING(string str)
         {
             this.str = str;
             length = new word(str.Length);
         }
 
-        // конструктор, принимающий в качестве параметра символ;
+        // ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г°, ГЇГ°ГЁГ­ГЁГ¬Г ГѕГ№ГЁГ© Гў ГЄГ Г·ГҐГ±ГІГўГҐ ГЇГ Г°Г Г¬ГҐГІГ°Г  Г±ГЁГ¬ГўГ®Г«;
         public STRING(char ch)
         {
             str = Convert.ToString(ch);
             length = new word(1);
         }
 
-        // Метод возвращающий длинну строки.
+        // ГЊГҐГІГ®Г¤ ГўГ®Г§ГўГ°Г Г№Г ГѕГ№ГЁГ© Г¤Г«ГЁГ­Г­Гі Г±ГІГ°Г®ГЄГЁ.
         public int getLength()
         {
             return length.getVal();
         }
 
-        // Метод очищающий строку.
+        // ГЊГҐГІГ®Г¤ Г®Г·ГЁГ№Г ГѕГ№ГЁГ© Г±ГІГ°Г®ГЄГі.
         public void Clear()
         {
             str = "";
@@ -242,19 +242,19 @@ namespace ConsoleApp6
     {
         static void Main(string[] args)
         {
-            Console.Write("Введите a = ");
+            Console.Write("Р’РІРµРґРёС‚Рµ a = ");
             int a = Convert.ToInt32(Console.ReadLine());
             Decimal first = new Decimal(a);
-            Console.Write("Введите b = ");
+            Console.Write("Р’РІРµРґРёС‚Рµ b = ");
             int b = Convert.ToInt32(Console.ReadLine());
             Decimal second = new Decimal(b);
-            Console.Write("Арифметическая разность строк = ");
+            Console.Write("РђСЂРёС„РјРµС‚РёС‡РµСЃРєР°СЏ СЂР°Р·РЅРѕСЃС‚СЊ СЃС‚СЂРѕРє = ");
             Decimal c = first - second;
             Console.WriteLine(c.str);
             Console.Write("a > b? ");
-            if (first > second) Console.Write("Да"); else Console.Write("Нет");
+            if (first > second) Console.Write("Р”Р°"); else Console.Write("РќРµС‚");
             Console.Write("\na < b? ");
-            if (first < second) Console.Write("Да"); else Console.Write("Нет");
+            if (first < second) Console.Write("Р”Р°"); else Console.Write("РќРµС‚");
             Console.ReadKey();
         }
     }
